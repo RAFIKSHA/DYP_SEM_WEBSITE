@@ -1,0 +1,383 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   DYP Patil Merit Scholarship
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
+  <style>
+   * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f9f5ec;
+  }
+  nav {
+    background-color: #800000;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+  }
+  nav li {
+    flex: 1;
+    text-align: center;
+  }
+  nav a {
+    display: block;
+    padding: 15px 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  nav a.active,
+  nav a:hover {
+    background: white;
+    color: #800000;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+  }
+
+  .main-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 40px 0 60px 0;
+  }
+
+  .left-panel {
+    background: #6a3f44;
+    width: 45%;
+    min-width: 320px;
+    color: #d9d9d9;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+    padding: 40px 20px 60px 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 80% 70%, 80% 100%, 0 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-panel .top-photos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .photo-block {
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #d9d9d9;
+    font-family: 'Roboto Slab', serif;
+  }
+  .photo-block img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 8px auto;
+    background-color: #7a5a5a;
+  }
+  .photo-block .name {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .photo-block .desc {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.1;
+  }
+
+  .logo {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    user-select: none;
+  }
+  .logo .dy {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: 0.15em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: 0.15em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: 0.15em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    color: white;
+  }
+  .logo .dy span {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+  }
+  .logo .dyp {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.15em;
+    color: white;
+    margin-top: -10px;
+  }
+  .logo .group {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    color: white;
+    margin-top: 2px;
+  }
+
+  .award-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #cfc9c9;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  .award-subtitle {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #9e8f8f;
+    text-align: center;
+  }
+
+  .right-panel {
+    width: 55%;
+    min-width: 320px;
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid #b9a98f;
+    background: white;
+    box-sizing: border-box;
+    margin-left: 20px;
+  }
+  .right-panel img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #7a7a7a;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .dot.active {
+    background-color: #cfcfcf;
+    opacity: 1;
+  }
+
+  @media (max-width: 900px) {
+    .main-content {
+      flex-direction: column;
+      padding: 20px 0 40px 0;
+    }
+    .left-panel,
+    .right-panel {
+      width: 100%;
+      margin-left: 0;
+      clip-path: none;
+      border: none;
+      padding: 20px 15px;
+    }
+    .right-panel {
+      margin-top: 20px;
+      border: 2px solid #b9a98f;
+    }
+    nav ul {
+      flex-wrap: wrap;
+    }
+    nav li {
+      flex: 1 1 33.33%;
+      text-align: center;
+    }
+  }
+  @media (max-width: 400px) {
+    nav li {
+      flex: 1 1 50%;
+    }
+    .photo-block img {
+      width: 80px;
+      height: 100px;
+    }
+    .logo {
+      font-size: 36px;
+    }
+    .logo .dyp {
+      font-size: 16px;
+    }
+    .logo .group {
+      font-size: 10px;
+    }
+    .award-title {
+      font-size: 18px;
+    }
+    .award-subtitle {
+      font-size: 12px;
+    }
+  }
+  </style>
+ </head>
+ <body>
+  <nav>
+   <ul>
+    <li>
+     <a class="active" href="#">
+      Home
+     </a>
+    </li>
+    <li>
+     <a href="about.html">
+      About Us
+     </a>
+    </li>
+    <li>
+     <a href="signup.html">
+       signup
+     </a>
+    </li>
+    <li>
+     <a href="acad.html">
+      Academic
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      Department
+     </a>
+    </li>
+    
+  
+    <li>
+     <a href="contactus.html">
+      Contact Us
+     </a>
+    </li>
+   </ul>
+  </nav>
+  <div class="container">
+   <div aria-label="Merit Scholarship Award Ceremony 2024-25" class="main-content" role="main">
+    <section aria-label="Award details and committee members" class="left-panel">
+     <div class="top-photos">
+      <div aria-label="Photo and details of Mr. Ruturaj Sanjay Patil" class="photo-block">
+       <img alt="Portrait photo of Mr. Ruturaj Sanjay Patil, young man with black hair and beard, wearing white shirt" height="120" src="https://storage.googleapis.com/a1aa/image/bdc08dd9-f221-4158-fcc2-c95a018aa2bb.jpg" width="100"/>
+       <div class="name">
+        MR RUTURAJ SANJAY PATIL
+       </div>
+       <div class="desc">
+        Chairman: Sou. Shantadevi D. Patil
+        <br/>
+        Merit Scholarship Committee
+       </div>
+      </div>
+      <div aria-label="Photo and details of Sou. Shantadevi D. Patil" class="photo-block">
+       <img alt="Portrait photo of Sou. Shantadevi D. Patil, elderly woman wearing orange and pink saree with glasses" height="120" src="https://storage.googleapis.com/a1aa/image/3c083c10-2d3a-44a2-c8c8-1aa6c6d82f3f.jpg" width="100"/>
+       <div class="name">
+        SOU. SHANTADEVI D. PATIL
+       </div>
+       <div class="desc">
+        (Aaisaheb)
+       </div>
+      </div>
+     </div>
+     <div aria-label="DYP D Y Patil Group logo" class="logo">
+      <div aria-hidden="true" class="dy" style="font-family: 'Alfa Slab One', cursive, serif; font-weight: 900; font-size: 48px; letter-spacing: 0.15em; user-select:none;">
+       DYP
+      </div>
+      <div aria-hidden="true" class="dyp" style="font-weight: 700; font-size: 20px; letter-spacing: 0.15em; margin-top: -10px;">
+       D Y PATIL
+      </div>
+      <div aria-hidden="true" class="group" style="font-weight: 400; font-size: 12px; letter-spacing: 0.3em; margin-top: 2px;">
+       GROUP
+      </div>
+     </div>
+     <h1 class="award-title">
+      SOU. SHANTADEVI D. PATIL
+     </h1>
+     <p class="award-subtitle">
+      MERIT SCHOLARSHIP AWARD 2024-25
+     </p>
+    </section>
+    <section aria-label="Group photo of Merit Scholarship Award Ceremony 2024" class="right-panel">
+     <img alt="Large group photo of many students and faculty members standing and sitting on stage during the Shantadevi D. Patil Merit Scholarship Award Ceremony 2024, with a white backdrop and red banner below" height="400" src="https://storage.googleapis.com/a1aa/image/77fe6262-61d4-4384-3879-b29742f84713.jpg" width="800"/>
+    </section>
+    <div aria-label="Image slider navigation dots" class="dots" role="tablist">
+     <button aria-label="Slide 1" aria-selected="true" class="dot active">
+     </button>
+     <button aria-label="Slide 2" aria-selected="false" class="dot">
+     </button>
+     <button aria-label="Slide 3" aria-selected="false" class="dot">
+     </button>
+     <button aria-label="Slide 4" aria-selected="false" class="dot">
+     </button>
+     <button aria-label="Slide 5" aria-selected="false" class="dot">
+     </button>
+     <button aria-label="Slide 6" aria-selected="false" class="dot">
+     </button>
+     <button aria-label="Slide 7" aria-selected="false" class="dot">
+     </button>
+     <button aria-label="Slide 8" aria-selected="false" class="dot">
+     </button>
+     <button aria-label="Slide 9" aria-selected="false" class="dot">
+     </button>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

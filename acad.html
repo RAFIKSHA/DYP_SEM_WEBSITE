@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academics - DYP Patil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f9f5ec;
+    }
+    nav {
+      background-color: #800000;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1200px;
+    }
+    nav li {
+      flex: 1 1 33.33%;
+      text-align: center;
+    }
+    nav a {
+      display: block;
+      padding: 15px 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    nav a.active,
+    nav a:hover {
+      background: white;
+      color: #800000;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      border: 2px solid #b9a98f;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+      color: #800000;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #800000;
+      font-family: 'Roboto Slab', serif;
+      margin-top: 30px;
+    }
+
+    ul {
+      margin: 10px 0 20px 20px;
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+
+    table th, table td {
+      border: 1px solid #b9a98f;
+      padding: 10px;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #800000;
+      color: white;
+    }
+
+    table td {
+      background-color: #f5f5f5;
+    }
+
+    @media (max-width: 768px) {
+      nav li {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="#">Admissions</a></li>
+      <li><a class="active" href="academic.html">Academic</a></li>
+      <li><a href="#">Department</a></li>
+      <li><a href="#">Campus life</a></li>
+      <li><a href="#">Placement</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Academics</h1>
+
+    <h2>Courses Offered</h2>
+    <ul>
+      <li>B.Tech in Computer Engineering</li>
+      <li>B.Tech in Mechanical Engineering</li>
+      <li>B.Tech in Electronics and Telecommunication Engineering</li>
+      <li>B.Tech in Civil Engineering</li>
+      <li>M.Tech in Computer Engineering</li>
+      <li>MBA (Master of Business Administration)</li>
+    </ul>
+
+    <h2>Academic Calendar (2024–25)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Commencement of Semester I</td>
+          <td>1st August 2024</td>
+        </tr>
+        <tr>
+          <td>Mid-Term Exams</td>
+          <td>15th October 2024</td>
+        </tr>
+        <tr>
+          <td>End-Term Exams</td>
+          <td>5th December 2024</td>
+        </tr>
+        <tr>
+          <td>Semester Break</td>
+          <td>20th December 2024 – 2nd January 2025</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Faculty</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dr. A. R. Patil</td>
+          <td>Computer Engineering</td>
+          <td>arp@dypatilcollege.edu.in</td>
+        </tr>
+        <tr>
+          <td>Prof. S. D. Jadhav</td>
+          <td>Mechanical Engineering</td>
+          <td>sdj@dypatilcollege.edu.in</td>
+        </tr>
+        <tr>
+          <td>Dr. M. K. Sharma</td>
+          <td>Electronics & Telecom</td>
+          <td>mks@dypatilcollege.edu.in</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

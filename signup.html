@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - DYP Patil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f9f5ec;
+    }
+    nav {
+      background-color: #800000;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+      flex-wrap: wrap;
+    }
+    nav li {
+      flex: 1 1 33.33%;
+      text-align: center;
+    }
+    nav a {
+      display: block;
+      padding: 15px 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    nav a.active,
+    nav a:hover {
+      background: white;
+      color: #800000;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: white;
+      border: 2px solid #b9a98f;
+      padding: 30px;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+      color: #800000;
+      margin-bottom: 20px;
+    }
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    form input,
+    form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: 'Roboto', sans-serif;
+    }
+    form button {
+      width: 100%;
+      background-color: #800000;
+      color: white;
+      padding: 12px;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    form button:hover {
+      background-color: #a00000;
+    }
+    @media (max-width: 600px) {
+      nav li {
+        flex: 1 1 50%;
+      }
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="#">Admissions</a></li>
+      <li><a href="#">Academic</a></li>
+      <li><a href="#">Department</a></li>
+      <li><a href="#">Campus life</a></li>
+      <li><a href="#">Placement</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Student Sign Up</h1>
+    <form action="#" method="POST">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required/>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required/>
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required/>
+
+      <label for="course">Select Course</label>
+      <select id="course" name="course" required>
+        <option value="">-- Select --</option>
+        <option value="btech">B.Tech</option>
+        <option value="mba">MBA</option>
+        <option value="bpharm">B.Pharm</option>
+        <option value="barch">B.Arch</option>
+      </select>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required/>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>

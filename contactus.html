@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - DYP Patil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f9f5ec;
+    }
+    nav {
+      background-color: #800000;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1200px;
+    }
+    nav li {
+      flex: 1 1 33.33%;
+      text-align: center;
+    }
+    nav a {
+      display: block;
+      padding: 15px 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    nav a.active,
+    nav a:hover {
+      background: white;
+      color: #800000;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      border: 2px solid #b9a98f;
+      padding: 30px;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+      color: #800000;
+      margin-bottom: 20px;
+    }
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .contact-details, .contact-form {
+      flex: 1 1 45%;
+    }
+    .contact-details h2,
+    .contact-form h2 {
+      color: #800000;
+      font-family: 'Roboto Slab', serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .contact-details p {
+      line-height: 1.6;
+    }
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: 'Roboto', sans-serif;
+    }
+    form button {
+      background-color: #800000;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    form button:hover {
+      background-color: #a00000;
+    }
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="#">Admissions</a></li>
+      <li><a href="#">Academic</a></li>
+      <li><a href="#">Department</a></li>
+      <li><a href="#">Campus life</a></li>
+      <li><a href="#">Placement</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a class="active" href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="contact-section">
+      <div class="contact-details">
+        <h2>College Address</h2>
+        <p>D. Y. Patil College of Engineering<br/>
+           Sector 29, Nigdi Pradhikaran,<br/>
+           Akurdi, Pune - 411044, Maharashtra, India</p>
+
+        <h2>Email</h2>
+        <p>info@dypatilcollege.edu.in</p>
+
+        <h2>Phone</h2>
+        <p>+91 20 2764 6363 / 64</p>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="POST">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required/>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required/>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
